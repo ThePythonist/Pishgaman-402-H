@@ -1,11 +1,9 @@
 numbers = []
-
-for i in range(3):
-    x = input("Entry : ")
-
+x = ""
+while x != "exit":
+    x = input("Type something : ")
     try:
         x = float(x)
-        # if str(x)[-2:] == ".0":
         if x == int(x):
             numbers.append(int(x))
         else:
@@ -14,3 +12,4 @@ for i in range(3):
         pass
 
 print(numbers)
+print(max(numbers))
